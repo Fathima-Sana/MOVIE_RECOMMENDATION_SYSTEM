@@ -1,0 +1,250 @@
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px; /* Add padding for spacing */
+}
+
+.user-form {
+  border-right: 1px solid #ccc; /* Add a border line between sections */
+  padding-right: 100px; /* Adjust padding for spacing */
+  margin-right: 100px; /* Create space between the sections */
+}
+
+.user-form, .movie-form {
+  width: 60%; /* Adjust width to accommodate border and spacing */
+  display: inline-block;
+  vertical-align: top; /* Align forms at the top */
+}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  overflow: scroll;
+}
+
+a {
+  color: #e43c5c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ea6981;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+/*--------------------------------------------------------------
+# Recommendation-container
+--------------------------------------------------------------*/
+
+#recommendations-container {
+  background-color: rgba(53, 41, 53, 0); /* Set a darker background color */
+  color: #fff; /* Set the text color to white */
+  padding: 10px;
+  border-radius: 7px;
+  height: 500px;
+  
+}
+
+#recommendations-container ul {
+  list-style: none;
+  margin: 5;
+  padding: 0;
+}
+
+#recommendations-container li {
+  margin: 5px 0;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) for the desired level of transparency */
+  color: white; /* Text color */
+  padding: 5px;
+}
+
+.dark-background-text {
+  background-color: rgba(59, 7, 7, 0.5); /* Adjust the alpha value (0.5) for the desired level of transparency */
+  color: white; /* Text color */
+  padding: 10px; /* Add padding for better readability */
+}
+
+.button {
+  background-color: rgb(72, 12, 18);
+  color: white; /* Text color */
+  border: none; /* Remove the border */
+  padding: 10px 20px; /* Adjust the padding for better button appearance */
+  cursor: pointer; /* Add a pointer cursor for user interaction */
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/img2.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#hero h3 {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 26px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 9px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  background: #e43c5c;
+  border: 2px solid #e43c5c;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h3 {
+    font-size: 22px;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-height: 500px) {
+  #hero {
+    height: 150vh;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
+}
+
+
+/* Your existing CSS rules */
+
+@keyframes animate {
+  0%, 100% {
+      background-image: url('../imgs/img1.jpg');
+  }
+  16.66% {
+      background-image: url('../imgs/img2.jpg');
+  }
+  33.32% {
+      background-image: url('../imgs/img3.jpg');
+  }
+  49.98% {
+      background-image: url('../imgs/slide4.jpg');
+  }
+  66.64% {
+      background-image: url('../imgs/slide5.jpg');
+  }
+  83.3% {
+      background-image: url('../imgs/slide6.jpg');
+  }
+}
+
+/* Your existing CSS rules */
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: animate 40s ease-in-out infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #ab111e;
+  color: rgb(240, 236, 236);
+}
+
+.btn-primary:hover {
+  background-color: rgb(86, 2, 2);
+}
+.previous-button {
+  margin-left: 20px; /* Moves the "Previous" button to the right */
+}
